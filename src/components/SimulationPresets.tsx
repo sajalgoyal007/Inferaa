@@ -15,15 +15,12 @@ interface SimulationPresetsProps {
 export function SimulationPresets({ onPresetSelect }: SimulationPresetsProps) {
   const presets = [
     {
-<<<<<<< HEAD
   name: "Demo: Learn Gravity",
   description: "Perfect judge demo",
   config: { count: 5, initialVelocity: { x: 0, y: -1, z: 0 }, spread: 2 }
 },
 
     {
-=======
->>>>>>> 2c65c367e0dcd038c0b442c199461dbea0c2db1e
       name: "Single Particle",
       description: "Watch one particle learn",
       config: { count: 1, initialVelocity: { x: 0, y: 0, z: 0 }, spread: 1 }

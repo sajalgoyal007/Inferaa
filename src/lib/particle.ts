@@ -71,12 +71,11 @@ export class ParticleSystem {
   /**
    * Update all particles for one time step
    */
-<<<<<<< HEAD
+
   // update(): CollisionEvent[] {
   update(learningEnabled: boolean): CollisionEvent[] {
-=======
-  update(): CollisionEvent[] {
->>>>>>> 2c65c367e0dcd038c0b442c199461dbea0c2db1e
+
+
     this.collisionEvents = [];
     const particlesArray = Array.from(this.particles.values());
 
@@ -101,15 +100,14 @@ export class ParticleSystem {
         y: trueState.vy + (Math.random() - 0.5) * 0.01
       };
 
-<<<<<<< HEAD
+
       // particle.filter.update(observedPosition, observedVelocity);
       if (learningEnabled) {
   particle.filter.update(observedPosition, observedVelocity);
 }
 
-=======
+
       particle.filter.update(observedPosition, observedVelocity);
->>>>>>> 2c65c367e0dcd038c0b442c199461dbea0c2db1e
 
       // Update particle state
       const updatedState = particle.filter.getState();

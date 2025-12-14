@@ -26,19 +26,13 @@ export function StatisticsPanel({
   mutualInformation,
   convergenceMetrics
 }: StatisticsPanelProps) {
-<<<<<<< HEAD
   const isConverged = convergenceMetrics?.converged;
-
-=======
->>>>>>> 2c65c367e0dcd038c0b442c199461dbea0c2db1e
   return (
     <div className="fixed bottom-4 left-4 w-96 bg-black/40 backdrop-blur-md border border-purple-500/30 rounded-lg p-6 text-white/90 shadow-2xl max-h-[60vh] overflow-y-auto">
       <h3 className="text-xl font-bold mb-4 text-purple-300" style={{ fontFamily: 'Playwrite MX Guides, serif' }}>
         Mathematical Metrics
       </h3>
-
-<<<<<<< HEAD
-      <div className="mb-4">
+   <div className="mb-4">
         <span
           className={`px-3 py-1 rounded-full text-xs font-semibold ${
             isConverged
@@ -50,8 +44,6 @@ export function StatisticsPanel({
         </span>
       </div>
 
-=======
->>>>>>> 2c65c367e0dcd038c0b442c199461dbea0c2db1e
       {/* Information Theory */}
       <div className="mb-6">
         <h4 className="text-sm font-semibold text-purple-200 mb-2">Information Theory</h4>

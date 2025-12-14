@@ -26,10 +26,7 @@ import { TutorialOverlay } from '@/components/TutorialOverlay';
 function App() {
   const [showSimulation, setShowSimulation] = useState(false);
   const [particles, setParticles] = useState<Particle[]>([]);
-<<<<<<< HEAD
   const [learningEnabled, setLearningEnabled] = useState(true);
-=======
->>>>>>> 2c65c367e0dcd038c0b442c199461dbea0c2db1e
   const [globalPosterior, setGlobalPosterior] = useState<any>(null);
   const [discoveredEquations, setDiscoveredEquations] = useState<any>(null);
   const [mutualInformation, setMutualInformation] = useState(0);
@@ -66,13 +63,10 @@ function App() {
           equationDiscoveryRef.current && metaLearningRef.current) {
         
         // Update particle physics and get collision events
-<<<<<<< HEAD
         // const collisions = particleSystemRef.current.update();
         const collisions = particleSystemRef.current.update(learningEnabled);
 
-=======
-        const collisions = particleSystemRef.current.update();
->>>>>>> 2c65c367e0dcd038c0b442c199461dbea0c2db1e
+
         const updatedParticles = particleSystemRef.current.getParticles();
         setParticles(updatedParticles);
         setCollisionEvents(collisions);
@@ -253,7 +247,7 @@ function App() {
 
       {/* Control Panel */}
       <ControlPanel
-<<<<<<< HEAD
+
   particles={particles}
   onSpawnParticle={handleSpawnParticle}
   onClear={handleClear}
@@ -265,16 +259,7 @@ function App() {
   onToggleLearning={() => setLearningEnabled(!learningEnabled)}
 />
 
-=======
-        particles={particles}
-        onSpawnParticle={handleSpawnParticle}
-        onClear={handleClear}
-        autoCamera={autoCamera}
-        onToggleAutoCamera={() => setAutoCamera(!autoCamera)}
-        onShowPresets={() => setShowPresets(!showPresets)}
-        onShowTutorial={() => setShowTutorial(true)}
-      />
->>>>>>> 2c65c367e0dcd038c0b442c199461dbea0c2db1e
+       
 
       {/* Simulation Presets */}
       {showPresets && (
